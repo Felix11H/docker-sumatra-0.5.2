@@ -1,0 +1,1 @@
+Docker image for Sumatra 0.5.2. For Sumatra documentation see [[http://neuralensemble.org/sumatra/]].
