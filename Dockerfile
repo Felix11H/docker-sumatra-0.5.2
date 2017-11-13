@@ -10,7 +10,7 @@ RUN apt-get install -y wget git
 RUN wget https://github.com/open-research/sumatra/archive/0.5.2.tar.gz
 RUN tar -xvzf 0.5.2.tar.gz
 RUN sed -i 's/http/https/g' sumatra-0.5.2/distribute_setup.py
-RUN pip install sumatra-0.5.2/
+RUN cd sumatra-0.5.2/ && pip install .
 RUN pip install gitpython==0.3.7
 
 WORKDIR /home/lab
