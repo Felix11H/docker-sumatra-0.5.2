@@ -1,8 +1,6 @@
 FROM ubuntu:16.04
 MAINTAINER Felix Z. Hoffmann <felix11h.dev@gmail.com>
 
-USER root
-
 RUN apt-get -y update
 RUN apt-get install -y python python-dev python-pip
 
@@ -28,4 +26,5 @@ RUN cd sumatra-0.5.2/ && pip install .
 
 RUN pip install gitpython==0.3.7
 
+USER docker
 WORKDIR /home/lab
