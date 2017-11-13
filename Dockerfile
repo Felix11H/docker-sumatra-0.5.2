@@ -1,6 +1,8 @@
 FROM ubuntu:16.04
 MAINTAINER Felix Z. Hoffmann <felix11h.dev@gmail.com>
 
+USER root
+
 RUN apt-get -y update
 RUN apt-get install -y python python-dev python-pip
 
