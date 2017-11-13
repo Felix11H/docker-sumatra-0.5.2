@@ -26,5 +26,7 @@ RUN cd sumatra-0.5.2/ && pip install .
 
 RUN pip install gitpython==0.3.7
 
+RUN useradd --create-home --shell /bin/bash docker
 USER docker
+
 WORKDIR /home/lab
